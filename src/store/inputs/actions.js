@@ -1,5 +1,3 @@
-// @flow
-
 import { setError } from '../error/actions'
 import { setLoaded } from '../loaded/actions'
 import { addInput } from '../input/actions'
@@ -13,7 +11,7 @@ export function removeInput (id: string){
 }
 
 export function loadInputs () {
-  return async (dispatch: Function) => {
+  return async (dispatch) => {
     try {
       const response = await fetch('https://api.myjson.com/bins/xpf4k')
       const result = await response.json()
