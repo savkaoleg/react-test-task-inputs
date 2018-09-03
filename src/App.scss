@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Roboto', sans-serif
+}
+
+.container {
+  padding: 10px
+}
+
+.cardsContainer {
+  transition: all 250ms;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.inputsAnimation-enter {
+  opacity: 0.01;
+}
+
+.inputsAnimation-enter.inputsAnimation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.inputsAnimation-leave {
+  opacity: 1;
+}
+
+.inputsAnimation-leave.inputsAnimation-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
