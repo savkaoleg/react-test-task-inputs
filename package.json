@@ -5,10 +5,11 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "npm-run-all --parallel server client",
-    "start": "webpack-dev-server --mode development",
+    "devclient": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "server": "nodemon index.js",
-    "client": "webpack --watch --mode development"
+    "client": "webpack --watch --mode development",
+    "start" : "nodemon index.js"
   },
   "author": "Savka Oleg",
   "license": "MIT",
