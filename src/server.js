@@ -2,6 +2,7 @@ import express from 'express'
 import path from 'path'
 import React from 'react'
 const fs = require('fs')
+const PORT = process.env.PORT || 5000
 
 import { Provider as ReduxProvider } from 'react-redux'
 import configureStore from './store/configureStore'
@@ -30,7 +31,7 @@ app.get('/*', (req, res) => {
 })
 
 
-app.listen(5000)
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 function htmlTemplate (reactDom, css) {
     return `

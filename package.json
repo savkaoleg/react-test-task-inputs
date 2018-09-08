@@ -13,6 +13,10 @@
   },
   "author": "Savka Oleg",
   "license": "MIT",
+  "engines": {
+    "node": "8.9.4",
+    "npm": "6.1.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
