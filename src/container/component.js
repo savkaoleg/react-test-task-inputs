@@ -15,7 +15,7 @@ class Home extends Component {
   addInput = () => {
     this.props.addInput()
   }
- 
+
   changeInput = (event) => {
     this.props.changeInput(event.currentTarget.name, event.currentTarget.value)
   }

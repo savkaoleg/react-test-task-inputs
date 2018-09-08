@@ -5,11 +5,17 @@ import App from './App'
 const rootEl = document.getElementById('index')
 
 
-const render = () => {
-  ReactDOM.render(
-    <App />,
-    rootEl
-  )
-}
+// const render = () => {
+//   ReactDOM.render(
+//     <App />,
+//     rootEl
+//   )
+// }
 
-render()
+// render()
+
+const jsx = (
+  <App/>
+)
+
+ReactDOM.hydrate(jsx, rootEl)
