@@ -30,7 +30,7 @@ app.get('/*', (req, res) => {
 })
 
 
-app.listen(2048)
+app.listen(5000)
 
 function htmlTemplate (reactDom, css) {
     return `
