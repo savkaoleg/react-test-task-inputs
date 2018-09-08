@@ -1,12 +1,12 @@
 import { ADD_INPUT, CHANGE_INPUT } from './types'
-import uniqueID from '../../hooks/uniqueID'
+import uniqueId from '../../hooks/uniqueId'
 
 export default function input (state = {}, action) {
   const { type, text } = action
   switch (type) {
     case ADD_INPUT:
       return {
-        id: uniqueID(),
+        id: uniqueId(),
         text
       }
     case CHANGE_INPUT:
